@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con el club a través de nuestro sistema oficial, introduce tus datos y nos pondremos en contacto a la brevedad.">
+    <meta name="keywords" content="benevento, contacto, futbol, conocer, email, acerca de, italia, club, deporte, equipo">
+    <title>Contacto | SCB</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/scbenevento.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Enlace CSS-->
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<div class="background">
+<body class="background__contenido contenido--color">
+    
+ <!-- Inicio Encabezado-->
+    <header>
+        <br>
+        <div>
+  <a href="../index.html"><img class="center" id="logo" src="../assets/img/scbeneventowhite.png" width="130" height="143" alt="SC Benevento"/></a>
+  <br>
+</div>
+
+    <!--Login-->
+<!-- Botón -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="../assets/img/fansavatar.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Nombre de Usuario</b></label>
+      <input type="text" placeholder="Usuario" name="uname" required>
+
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Contraseña" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Recuérdame
+      </label>
+    </div>
+
+    <div class="container2" style="background-attachment: color #b0a16b;">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw">¿Olvidaste tu <a href="../pages/contrasena.html">contraseña?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<!--Fin Login-->
+<!--Inicio Nav-->
+<div class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="../pages/tienda.html">Tienda</a>
+  <a href="../pages/partidos.html">Partidos</a>
+  <a href="../pages/equipo.html">Equipo</a>
+  <a class="active" href="../pages/contacto.html">Contacto</a>
+</div>
+
+<br>    
+    <!--Redes Sociales-->
+
+<div>
+    <!-- Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+<a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a>
+<a href="https://www.google.com" class="fa fa-google" target="_blank"></a>
+<!--Cierre Redes Sociales-->
+</div>    
+<br>
+
+    <!--Cierre Encabezado-->
+    <!--Inicio Contenido-->
+
+    <h3 class="center2">¡Contacta con el club!</h3>
+<br>
+<p class="center2">Rellena este formulario con tus datos y lo haremos llegar a nuestras oficinas a la brevedad.</p>
+<p class="center2" style="opacity:40%">El tiempo de respuesta puede variar alrededor de las 48 horas.</p>
+<br>        
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Nombre</label>
+    <input type="text" id="fname" name="firstname" placeholder="Tu nombre completo">
+
+    <label for="lname">E-Mail</label>
+    <input type="text" id="lname" name="lastname" placeholder="Tu correo electrónico">
+
+    <label for="country">Región</label>
+    <select id="country" name="Región">
+      <option value="eu">Europa</option>
+      <option value="as">Asia</option>
+      <option value="na">Norteamérica</option>
+      <option value="sa">Sudamérica</option>
+      <option value="af">Africa</option>
+      <option value="oc">Oceanía</option>
+      
+    </select>
+
+    <label for="subject">Asunto</label>
+    <textarea id="subject" name="subject" placeholder="Escribe aquí tu mensaje..." style="height:200px"></textarea>
+
+    <input type="submit" value="Enviar">
+</div>
+
+<button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#demo">Términos</button>
+  <div id="demo" class="collapse">
+    <p style="opacity: 40%;">
+   Al aceptar los términos y condiciones aceptas que al contactarte con la Societá Calcio Benevento por medio de este sitio web estás compartiendo los datos que nos acercas con nuestros empleados, por lo que nos acercaremos a tí para brindarte soporte, lo que significa que puedes llegar a recibir correos nuestros a la brevedad. Nuestras únicas redes oficiales son las que aparecen dentro del sitio. También podrías recibir ocasionalmente correos con ofertas exclusivas, promociones para conseguir entradas e importantes sorteos.
+</p>
+</div>
+
+
+<p class="center2">Acepto términos y condiciones
+<input class="bordeWheat" type="checkbox" name="acepta" value="1"></p>
+</div>
+<br>
+
+</form>
+</section>
+
+
+
+    <!--Cierre Contenido-->
+<br>    
+    <!--Inicio Footer-->
+     <footer id="footer" class="center2">
+        <div>
+        <a class="centergoldtext" href="../pages/tienda.html"><h3>Tienda</h3></a><br></div>
+        <div>
+        <a class="" href="../pages/equipo.html">Conoce más</a></div>
+       <a class="" href="../pages/equipo.html"><img src="../assets/img/scbenevento.png" width="50" height="55" alt="SC Benevento"/></a></div>
+       <div>
+       <p class="centergoldtext">Desde 1927</p>
+
+       <br>
+   </div>
+</footer>
+    <!--Cierre Footer-->   
+
+</div>
+
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</div>
+</html>
+

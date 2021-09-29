@@ -1,0 +1,89 @@
+$negro:black;
+$blanco:white;
+$vista:desktop;
+$fontype:texto;
+
+h1 {color: $blanco;}
+
+$fontatkinson:"Atkinson Hyperlegible";
+
+.textoNoticia {
+p {
+	font:{
+	family:$fontatkinson
+		}
+	}
+}
+
+
+.texto {
+	&__textoNoticia {
+	color:$blanco;
+font:{
+	family:$fontatkinson
+		}
+	}
+}
+
+.collapse {
+	&__terms {
+	color:wheat;
+	}
+}
+
+.background {
+	&__contenido {
+	background:$negro;
+	}
+}
+
+.barraNav {
+	background:linear-gradient(to bottom, wheat, black);
+	&__barra {
+	color:$blanco;
+	}
+}
+
+
+p{
+	@if $fontype==texto{
+	color:white;
+	}
+	@else if $fontype==title{
+	color:wheat;
+	}
+	@else{
+	color:grey;
+	}
+}
+
+ul{
+	@if $fontype==texto{
+	color:green;
+	}
+	@else if $fontype==title{
+	color:white;
+	}
+	@else{
+	color:grey;
+	}
+}
+
+
+ol{
+	@if $fontype==texto{
+	color:red;
+	}
+	@else if $fontype==title{
+	color:wheat;
+	}
+	@else{
+	color:grey;
+	}
+}
+
+
+table{
+	background-color:white;
+}
+
